@@ -1,0 +1,58 @@
+ {{!-- {{datos.nombre}} --}}
+
+<h1>Formulario de Login</h1>
+
+
+{{!-- {{#if error}}
+<div class="alert alert-danger" role="alert">
+  {{error}}
+</div>
+{{/if}} --}}
+
+<div class="container">
+
+    <div class="row justify-content-center">
+
+        <div class="col-4">
+
+            <br>
+            <br>
+            <br>
+            <br>
+
+            {{error}}
+
+            <form action="/login" method="post" style="border: solid 2px gray; padding: 30px; background-color: lightsalmon;">
+                <div class="form-group">
+                    <label for="usuario">Usuario</label>
+                    <input type="text" name="usuario" class="form-control" id="usuario" aria-describedby="emailHelp">
+                </div>
+                <br>
+
+                <div class="form-group">
+                    <label for="password">Contraseña</label>
+                    <input type="password" name="password" class="form-control" id="password" aria-describedby="emailHelp" >
+                </div>
+
+                <br>
+                <button type="submit" class="btn btn-secondary
+                ">Ingresar </button>
+            </form>
+
+
+
+
+
+        </div>
+
+
+
+
+
+    </div>
+
+
+
+
+
+</div>
